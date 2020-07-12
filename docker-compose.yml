@@ -7,5 +7,8 @@ services:
     image: postgres:11.3-alpine
     container_name: help_proj_postgres
     restart: always
-    ports:
-        - 15432:5432
+    ports: 
+      - "15432:5432"
+      - "25432:5432"
+    
+        

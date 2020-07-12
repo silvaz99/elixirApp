@@ -15,7 +15,7 @@ defmodule HelpProjWeb.Router do
 
   scope "/", HelpProjWeb do
     pipe_through :browser
-    resources "/pedidos", PedidoController, except: [:new, :edit]
+    resources "/requests", PedidoController, except: [:new, :edit]
     get "/", PageController, :index
   end
 

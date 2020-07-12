@@ -2,9 +2,10 @@ defmodule HelpProj.Directory.Pedido do
   use Ecto.Schema
   import Ecto.Changeset
 
-  schema "posts" do
-    field :descricao, :string
-    field :nome, :naive_datetime
+  schema "pedidos" do
+    field :cpf, :string
+    field :data, :date
+    field :duracao, :time
 
 
     timestamps()

@@ -12,7 +12,9 @@ defmodule HelpProjWeb.PedidoView do
 
   def render("pedido.json", %{pedido: pedido}) do
     %{id: pedido.id,
-      nome: pedido.nome,
-      descricao: pedido.descricao}
+      cpf: pedido.cpf,
+      data: pedido.data,
+      duracao: pedido.duracao
+    }
   end
 end
