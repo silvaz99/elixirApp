@@ -6,7 +6,7 @@ config :help_proj, HelpProj.Repo,
   password: "postgres",
   database: "help_proj_dev",
   hostname: "localhost",
-  port: "15432",
+  port: "25432",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 

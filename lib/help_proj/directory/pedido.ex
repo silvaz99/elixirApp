@@ -14,7 +14,7 @@ defmodule HelpProj.Directory.Pedido do
   @doc false
   def changeset(pedido, attrs) do
     pedido
-    |> cast(attrs, [:nome, :descricao])
-    |> validate_required([:nome, :descricao])
+    |> cast(attrs, [:cpf, :duracao, :data])
+    |> validate_required([:cpf, :duracao, :data])
   end
 end
